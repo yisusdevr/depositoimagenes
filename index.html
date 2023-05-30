@@ -1,1 +1,335 @@
-This is only for img
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style>
+*{
+    font-family: 'Poppins', serif;
+    font-size: 1.2rem;
+}
+body{
+
+margin: 0;
+}
+.header{
+    border-style: solid;
+    border-width: 1%;
+
+    background-color: rgb(255, 255, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+    margin: 0px auto 0px auto;
+
+}
+.main{
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0px auto 0px auto;
+height: 100vh;
+}
+.imagen{
+    width: 100%;
+    position: relative;
+
+}
+.lado{
+    position: absolute;
+    font-weight: bold;
+}
+#left{
+       bottom: 50%;
+      left: 35%;
+}
+#up{
+    left: 49.5%;
+    top: -10%;
+}
+#right{
+    bottom: 50%;
+    right: 35%;
+}
+#down{
+    left: 49%;
+    bottom: -10%;
+}
+#left2{
+       bottom: 50%;
+      left: 35%;
+}
+#up2{
+    left: 49.5%;
+    top: -10%;
+}
+#right2{
+    bottom: 50%;
+    right: 35%;
+}
+#down2{
+    left: 49%;
+    bottom: -10%;
+}
+#left3{
+       bottom: 50%;
+      left: 35%;
+}
+#up3{
+    left: 49.5%;
+    top: -11%;
+}
+#right3{
+    bottom: 50%;
+    right: 35%;
+}
+#down3{
+    left: 49%;
+    bottom: -10%;
+}
+.footer{
+      
+       background-color: rgb(105, 105, 105);
+  color: white;
+       margin: 0px auto 0px auto;
+       text-align: center;
+       padding-top: 10px;
+       padding-bottom: 10px;
+}
+
+button {
+    color: white;
+    background: black;
+    text-decoration: none;
+    border: 0;
+    padding: 0.3%;
+}
+input {
+    background: white;
+border: 1px solid rgb(220, 213, 213);
+outline: none;
+border-radius: 1px;
+  
+
+}
+h1 {
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+</style>
+
+
+
+</head>
+<body>
+    <header class="header">
+        <b>Figuras Geometricas</b>
+        <br>
+        Proyecto Formativo mòdulo 5
+    </header>
+
+       <!-- figura -->
+    <div class="main">
+        <br>
+Romboide
+       <br><br><br>
+       <label for="x">Ingrese el valor de <b>x</b>:</label>
+       <input type="text" id="x" >
+       <button onclick="CalcularArea()">Calcular Àrea</button>
+       <br>
+<br><br>
+       <div class="imagen"> 
+           <img src="romboide.png" alt="" width="200px" >
+           <div class="lado" id="left"></div>
+           <div class="lado" id="up"></div>
+           <div class="lado" id="down"></div>
+           <div class="lado" id="right"></div>
+       </div>
+       <br>
+       <br>
+       <label for="x">Ingrese el valor del  <b>Àrea</b>:</label>
+       <input type="text" id="area" >
+       <button onclick="CalcularX()">Calcular X</button>
+       <br><br>
+       <button onclick="LimpiarCampos()">Limpiar campos</button>
+   </div>
+       <!-- figura -->
+
+              <!-- figura -->
+    <div class="main">
+      Triangulo
+       <br><br><br>
+       <label for="x2">Ingrese el valor de <b>x</b>:</label>
+       <input type="text" id="x2" >
+       <button onclick="CalcularArea2()">Calcular Àrea</button>
+       <br>
+<br><br>
+       <div class="imagen"> 
+           <img src="triangulo.png" alt="" width="200px" >
+           <div class="lado" id="left2"></div>
+           <div class="lado" id="up2"></div>
+           <div class="lado" id="down2"></div>
+           <div class="lado" id="right2"></div>
+       </div>
+       <br>
+       <br>
+       <label for="x2">Ingrese el valor del  <b>Àrea</b>:</label>
+       <input type="text" id="area2" >
+       <button onclick="CalcularX2()">Calcular X</button>
+       <br><br>
+       <button onclick="LimpiarCampos2()">Limpiar campos</button>
+   </div>
+       <!-- figura -->
+
+        <!-- figura -->
+    <div class="main">
+Cuadrado       <br><br><br>
+       <label for="x3">Ingrese el valor de <b>x</b>:</label>
+       <input type="text" id="x3" >
+       <button onclick="CalcularArea3()">Calcular Àrea</button>
+       <br>
+<br><br>
+       <div class="imagen"> 
+           <img src="cuadrado.png" alt="" width="200px" >
+           <div class="lado" id="left3"></div>
+           <div class="lado" id="up3"></div>
+           <div class="lado" id="down3"></div>
+           <div class="lado" id="right3"></div>
+       </div>
+       <br>
+       <br>
+       <label for="x3">Ingrese el valor del  <b>Àrea</b>:</label>
+       <input type="text" id="area3" >
+       <button onclick="CalcularX3()">Calcular X</button>
+       <br><br>
+       <button onclick="LimpiarCampos3()">Limpiar campos</button>
+   </div>
+       <!-- figura -->
+
+       
+    <footer class="footer">
+        <h1>Integrantes:</h1>
+        <p>Jesus Omar Palacios Peña 20200532 , Seccion Tecnica 2B, Seccion Academica B4</p>
+        <p>Rodolfo Antonio Perez Hernandez 20230300 , Seccion Tecnica 2B, Seccion Academica B4</p>
+        <p>Diego Jose Rodriguez Pocasangre 20230602 , Seccion Tecnica 1B, Seccion Academica B4</p>
+        <p>Daniel Rolando Soriano Solis 20230169 , Seccion Tecnica 2B, Seccion Academica B4</p>
+        <p>Alessandro Antonio Muñoz Quijada 20200128 , Seccion Tecnica 2B, Seccion Academica B4</p>
+        
+    </footer>
+</body>
+
+
+<script>
+    //Area
+function CalcularArea(){
+    var x = document.getElementById("x").value;
+    var base = 2*x;
+    var altura = x;
+    var area = base * altura;
+
+   document.getElementById("up").textContent =  2*x;
+   document.getElementById("down").textContent =  2*x;
+   document.getElementById("left").textContent = x;
+   document.getElementById("right").textContent = x;
+
+    document.getElementById("area").value = area;
+}
+function CalcularX(){
+    var area = document.getElementById("area").value;
+    var x =Math.sqrt(area/2);
+
+   document.getElementById("x").value = x;
+   document.getElementById("up").textContent = 2*x;
+   document.getElementById("down").textContent = 2*x;
+   document.getElementById("left").textContent = x;
+   document.getElementById("right").textContent = x;
+}
+function LimpiarCampos(){
+   document.getElementById("up").textContent = "";
+   document.getElementById("down").textContent = "";
+   document.getElementById("left").textContent = "";
+   document.getElementById("right").textContent = "";
+   document.getElementById("area").value = "";
+   document.getElementById("x").value = "";
+}
+    //Area
+
+    //Area
+    function CalcularArea2(){
+    var x2 = document.getElementById("x2").value;
+    var base2 = 2*x2;
+    var altura2 = x2;
+    var area2 = (base2 * altura2) / 2;
+
+   document.getElementById("up2").textContent =  2*x2;
+   document.getElementById("down2").textContent =  2*x2;
+   document.getElementById("left2").textContent = x2;
+   document.getElementById("right2").textContent = x2;
+
+    document.getElementById("area2").value = area2;
+}
+function CalcularX2(){
+    var area2 = document.getElementById("area2").value;
+    var x2 =(2*area2);
+
+   document.getElementById("x2").value = x2;
+   document.getElementById("up2").textContent = 2*x2;
+   document.getElementById("down2").textContent = 2*x2;
+   document.getElementById("left2").textContent = x2;
+   document.getElementById("right2").textContent = x2;
+}
+function LimpiarCampos2(){
+   document.getElementById("up2").textContent = "";
+   document.getElementById("down2").textContent = "";
+   document.getElementById("left2").textContent = "";
+   document.getElementById("right2").textContent = "";
+   document.getElementById("area2").value = "";
+   document.getElementById("x2").value = "";
+}
+    //Area
+    //Area
+    function CalcularArea3(){
+    var x3 = document.getElementById("x3").value;
+    var lado = x3;
+    
+    var area3 = lado * lado;
+
+   document.getElementById("up3").textContent =  x3;
+   document.getElementById("down3").textContent =  x3;
+   document.getElementById("left3").textContent = x3;
+   document.getElementById("right3").textContent = x3;
+
+    document.getElementById("area3").value = area3;
+}
+function CalcularX3(){
+    var area3 = document.getElementById("area3").value;
+    var x3 =Math.sqrt(area3/1);
+
+   document.getElementById("x3").value = x3;
+   document.getElementById("up3").textContent = x3;
+   document.getElementById("down3").textContent = x3;
+   document.getElementById("left3").textContent = x3;
+   document.getElementById("right3").textContent = x3;
+}
+function LimpiarCampos3(){
+   document.getElementById("up3").textContent = "";
+   document.getElementById("down3").textContent = "";
+   document.getElementById("left3").textContent = "";
+   document.getElementById("right3").textContent = "";
+   document.getElementById("area3").value = "";
+   document.getElementById("x3").value = "";
+}
+    //Area
+</script>
+
+
+</html>
